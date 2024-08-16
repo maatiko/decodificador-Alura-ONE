@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poetsen+One&display=swap');
+
+* {
+
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+body{
+    background: #F3F5FC;
+}
+
+.logoAlura {
+    margin-left: 40px;
+    padding-top: 40px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    margin-left: 240px;
+    gap: 200px;
+    box-sizing: border-box;
+}
+
+.primeira_seccao{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.area_texto {
+    color: #0A3871;
+    border: none;
+    font-size: 32px;
+    width: 680px;
+    background-color: #F3F5FC;;
+    padding-left: 9px;
+    resize: none;
+    border-radius: 24px;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+
+.informacao {
+  display: flex;
+  justify-content: flex-start;
+  height: 16px;
+  gap: 8px;
+}
+
+.informacao_texto{
+    margin: 0;
+    font-size: 12px;
+    color: #495057;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-start;
+    width: 680px;
+    gap: 24px;
+    font-size: 16px;
+
+}
+.botoes_encriptar{
+    padding: 24px;
+    color: white;
+    background-color: #0A3871;
+    border: none;
+    border-radius:24px ;
+    width: 48%;
+}
+.botoes_descriptar{
+    padding: 24px;
+    color:#0A3871;
+    background-color: white;
+    border-style:solid;
+    border-color: #0A3871;
+    border-radius:24px;
+    width: 48%;
+}
+
+.segunda_seccao{
+    display: flex;
+    flex-direction: column;
+}
+.area_resposta{
+    height: 944px;
+    width: 400px;
+    border-radius:32px;
+    border: none;
+    background-color: white;
+    margin-top: -10%;
+    padding: 10%;
+    color: #495057;
+    resize: none;
+    font-size: 24px;
+
+}
+.telaDeEspera{
+    text-align: center;
+    margin-top: -200%;
+    margin-left: 17.5%;
+    width: 336px;
+}
+.tituloDeEspera{
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 5%;
+
+}
+
+.textoDeEspera{
+    color: #343A40;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+.btn-copiar{
+    width: 83%;
+    padding: 24px;
+    color:#0A3871;
+    background-color: white;
+    border-style:solid;
+    border-color: #0A3871;
+    border-radius:24px;
+    margin-top: -100px;
+    margin-left: 17.5%;
+}
+
