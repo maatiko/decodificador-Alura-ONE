@@ -28,8 +28,8 @@
         </section>
 
         <section class="segunda_seccao">                                                  
-            <textarea class="area_resposta" cols="20" rows="5" readonly></textarea>
-            <button class="btn-copiar" display:none>Copiar</button>
+            <textarea class="area_resposta" cols="20" rows="5"  contenteditable="true" readonly></textarea>
+            <button class="btn-copiar" display:none onclick='copiar()'>Copiar</button>
             <div class="telaDeEspera">
                 <img src="./images/meninoLupa.png" alt="menino com lupa">
                 <h3 class="tituloDeEspera">Nenhuma mensagem <br>encontrada</h3>
@@ -42,8 +42,8 @@
     </main>
 
     <footer>    
-        <h4>Desenvolvido por Matiko</h4>
-        <a></a>
+        <h4 class="autor">Desenvolvido por Matiko</h4>
+        <a class="linkGithub">https://github.com/maatiko</a>
     </footer>
     <script src="script.js"></script>
 </body>

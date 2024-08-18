@@ -58,12 +58,10 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada;
 }
 
-
-function btnCopiar(){
-    copiar()
-}
-
-
 function copiar(){
-    textoCopiado=document.querySelector('.area_resposta').copy 
-}
+    mensagem.addEventListener("copy", (event) => {
+        const selection = document.getSelection();
+        event.clipboardData.setData("text/plain", selection.toString().toLowerCase());
+        event.preventDefault();
+      });
+   }
