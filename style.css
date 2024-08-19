@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poetsen+One&display=swap');
 
 * {
-
     font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 150%;
 }
 
+:root{
+
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria:#0A3871;
+    --cor-terciaria:#343A40;
+    --cor-quaternaria: #ffffff;
+
+    --cor-hover-secundaria: #
+    --cor-hover-terciaria:#
+}
+
+
 body{
-    background: #F3F5FC;
+    background: var(--cor-primaria);
 }
 
 .logoAlura {
@@ -33,12 +44,13 @@ main {
 }
 
 .area_texto {
-    color: #0A3871;
+    color: var(--cor-secundaria);
     border: none;
     font-size: 32px;
     width: 680px;
-    background-color: #F3F5FC;;
-    padding-left: 9px;
+    background-color: var(--cor-primaria);;
+    padding-left: 10%;
+    border-color: var(--cor-secundaria);
     resize: none;
     border-radius: 24px;
     margin-top: 10%;
@@ -56,57 +68,61 @@ main {
 .informacao_texto{
     margin: 0;
     font-size: 12px;
-    color: #495057;
+    color: var(--cor-terciaria);
 }
 
 .botoes {
     display: flex;
-    justify-content: flex-start;
-    width: 680px;
+    justify-content: center;
     gap: 24px;
     font-size: 16px;
 
 }
 .botoes_encriptar{
     padding: 24px;
-    color: white;
-    background-color: #0A3871;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     border: none;
     border-radius:24px ;
-    width: 48%;
+    width: 58%;
+
 }
 .botoes_descriptar{
     padding: 24px;
-    color:#0A3871;
-    background-color: white;
+    color:var(--cor-secundaria);
+    background-color: var(--cor-primaria);
     border-style:solid;
     border-color: #0A3871;
     border-radius:24px;
-    width: 48%;
+    width: 58%;
 }
 
 .segunda_seccao{
     display: flex;
     flex-direction: column;
-}
-.area_resposta{
     height: 944px;
     width: 400px;
+}
+.area_resposta{
+    height: 100%;
+    width: 100%;
+    border-color:var(--cor-secundaria) ;
     border-radius:32px;
     border: none;
-    background-color: white;
+    background-color: var( --cor-quaternaria);
     margin-top: -10%;
     padding: 10%;
-    color: #495057;
+    color: var(--cor-terciaria);
     resize: none;
     font-size: 24px;
 
 }
 .telaDeEspera{
+
     text-align: center;
     margin-top: -200%;
     margin-left: 17.5%;
-    width: 336px;
+    width:100%;
 }
 .tituloDeEspera{
     color: #343A40;
@@ -126,12 +142,15 @@ main {
 .btn-copiar{
     width: 83%;
     padding: 24px;
-    color:#0A3871;
-    background-color: white;
+    color:var(--cor-secundaria);
+    background-color: var(--cor-primaria);
     border-style:solid;
-    border-color: #0A3871;
+    border-color: var(--cor-secundaria);
     border-radius:24px;
     margin-top: -100px;
     margin-left: 17.5%;
 }
 
+@media screen {
+    
+}

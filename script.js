@@ -59,9 +59,7 @@ function desencriptar(stringDesencriptada){
 }
 
 function copiar(){
-    mensagem.addEventListener("copy", (event) => {
-        const selection = document.getSelection();
-        event.clipboardData.setData("text/plain", selection.toString().toLowerCase());
-        event.preventDefault();
-      });
+
+    document.querySelector(".area_resposta").select();
+    document.execCommand('copy');
    }
