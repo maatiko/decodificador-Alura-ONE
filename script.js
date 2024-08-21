@@ -7,11 +7,6 @@ const mensagem = document.querySelector(".area_resposta");
 //A letra "o" é convertida para "ober"
 //A letra "u" é convertida para "ufat"
 
-function desaparecerCopiar(){
-    document.querySelector('.btn-copiar').style.display = 'none';
-}
-
-desaparecerCopiar()
 
 function btnEncriptar(){
     const textoEncriptado= encriptar(textArea.value);
@@ -31,8 +26,9 @@ function encriptar(stringEncriptada){
     }
     
     document.querySelector('.telaDeEspera').style.display ="none";
-    document.querySelector('.btn-copiar').style.display ="inline";
-    
+    document.querySelector('.botao_copiar').style.display ="inline";
+    document.querySelector('.area_resposta').style.display ="inline";
+
     return stringEncriptada;
 }
 
@@ -53,8 +49,8 @@ function desencriptar(stringDesencriptada){
         }
     }
     document.querySelector('.telaDeEspera').style.display ="none";
-    document.querySelector('.btn-copiar').style.display ="inline";
-
+    document.querySelector('.botao_copiar').style.display ="inline";
+    document.querySelector('.area_resposta').style.display="inline";
     return stringDesencriptada;
 }
 
